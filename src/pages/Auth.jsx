@@ -1,0 +1,9 @@
+import { useDebugValue } from "react";
+
+
+export default function Auth(){
+
+    return (
+        <div>authentication</div>
+    );
+}
