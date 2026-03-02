@@ -7,7 +7,7 @@ export default function ProductCard({product}) {
                 <h3 className="product-card-name">{product.name}</h3>
                 <p className="product-card-price">{product.price}</p>
                 <div className="product-card-actions">
-                    <Link className="btn btn-secondary">
+                    <Link className="btn btn-secondary" onClick={`/product/${prodcut.id}`}>
                         View Details
                     </Link>
                 
