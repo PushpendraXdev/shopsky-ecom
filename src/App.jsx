@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import AuthProvider from './context/AuthContext'
 import ProductDeatail from './pages/ProductDetails'
+import CartProvider from './context/CartContext'
 
 function App() {
 //  const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className='app'>
       <AuthProvider>
+        <CartProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path='/products/:id' element={<ProductDeatail/>}/>
       </Routes>
+      </CartProvider>
       </AuthProvider>
     </div>
   )

@@ -16,7 +16,7 @@ export default function Home(){
                 <p className="home-subtitle">Discover Your Vision</p>
             </div>
             <div className="container">
-                <h1 className="page-title"> Our Porducts</h1>
+                <h1 className="page-title"> Our Products</h1>
                 <div className="product-grid">
                     {products.map((product)=>(
            <ProductCard product={product} key={product.id}/>
